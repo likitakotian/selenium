@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.hero.testkuapp.sample_Project.ChromeInitiationTest">
+      <class name="com.hero.testkuapp.sample_Project.DayTwoTaskTest">
         <methods>
-          <include name="quitBrowser"/>
+          <include name="mouseOutFromTheView"/>
           <include name="initDriver"/>
-          <include name="valiadteAuthentication"/>
+          <include name="closeDriver"/>
         </methods>
-      </class> <!-- com.hero.testkuapp.sample_Project.ChromeInitiationTest -->
+      </class> <!-- com.hero.testkuapp.sample_Project.DayTwoTaskTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
