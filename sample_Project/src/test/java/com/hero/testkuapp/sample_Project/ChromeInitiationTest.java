@@ -4,25 +4,17 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.net.URL;
-import java.net.http.HttpClient;
-import java.net.http.HttpRequest;
-import java.net.http.HttpResponse;
-import java.util.Iterator;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
-import com.hero.testkuapp.sample_Project.PageObjectModel;
 
 @Test
 public class ChromeInitiationTest extends ConfigFile {
 
 	private WebDriver driver;
 	private PageObjectModel pom;
-	
 
 	@BeforeTest
 	public void initDriver() throws Exception {
