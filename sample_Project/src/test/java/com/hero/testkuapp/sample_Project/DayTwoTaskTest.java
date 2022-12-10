@@ -19,7 +19,6 @@ public class DayTwoTaskTest extends ConfigFile {
 		initializeWebDriver();
 		driver = getInitializedDriver();
 		pageObjectModel = new PageObjectModel(driver);
-		
 	}
 
 	@AfterTest
@@ -55,7 +54,6 @@ public class DayTwoTaskTest extends ConfigFile {
 		actions.dragAndDrop(pageObjectModel.getSource(), pageObjectModel.getDestination());
 		assertTrue(true);
 		System.out.println("Sucessfully validated Drag and Drop");
-		
 	}
 	
 	@Test(enabled = false)
