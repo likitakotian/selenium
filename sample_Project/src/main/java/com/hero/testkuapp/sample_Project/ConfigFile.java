@@ -2,7 +2,6 @@ package com.hero.testkuapp.sample_Project;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
@@ -52,10 +51,10 @@ public class ConfigFile {
 			throw new NullPointerException("Driver is not initialized");
 	}
 
-	public String takeFullScreenShot(String testcase) throws Exception {
+	public String takeFullScreenShot(String testcase, WebDriver driver) throws Exception {
 		takescScreenshot = (TakesScreenshot) driver;
 		File src = takescScreenshot.getScreenshotAs(OutputType.FILE);
-		String destination = System.getProperty("user.dir") + "/resources/" + testcase + ".png";
+		String destination = System.getProperty("user.dir") + "/reports/" + testcase + ".png";
 		FileUtils.copyFile(src, new File(destination));
 		return destination;
 	}
